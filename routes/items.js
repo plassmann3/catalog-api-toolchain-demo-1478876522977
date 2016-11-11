@@ -11,7 +11,7 @@ var USE_FASTCACHE = false;
  */
 exports.loadTest = function(req, res) {
     res.json({"success": 0, "fail": 0, "time": 0});
-// /* 
+// /*    
     USE_FASTCACHE = true;
     var testCount = req.query.count;
     testCount = testCount ? parseInt(testCount) : 100;
